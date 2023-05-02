@@ -25,5 +25,18 @@
  */
 
 int task01(int a, int b, int c, int d) {
-	return 0;
+	if (a != b && a != c && a != d && b != c && b != d && c != d) {
+		return 0;
+	}
+	int num = 1;
+	if (a == b || a == c || a == d) {
+		num++;
+	}
+	if (b == c || b == d) {
+		num++;
+	}
+	if (c == d) {
+		num++;
+	}
+	return num;
 }

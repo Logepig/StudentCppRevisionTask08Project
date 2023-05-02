@@ -21,5 +21,16 @@
  */
 
 int task03(int a, int b, int c, int d) {
-	return 0;
+
+	if (a <= b && a <= c && a <= d) {
+		return a;
+	}
+	if (b <= c && b <= d) {
+		return b;
+	}
+	if (c <= d) {
+		return c;
+	}
+	return d;
+	
 }
