@@ -86,25 +86,26 @@ string taskX(int a1, int b1, int c1, int a2, int b2, int c2) {
 		b2 = c2;
 		c2 = temp;
 	}
+
 	if (a1 <= a2 && b1 <= b2 && c1 <= c2) {
 
 		msg = "The first box is smaller than the second one.";
-		cout << msg << endl;
+		
 	}
 	else {
 		msg = "Boxes are incomparable.";
-		cout << msg << endl;
+		
 	}
-	cout << a1 << " " << b1 << " " << c1 << "      " << a2 << " " << b2 << " " << c2 << endl;
+	
 	if (a1 >= a2 && b1 >= b2 && c1 >= c2) {
 	
 		msg = "The first box is larger than the second one.";
-		cout << msg << endl;
+	
 	}
 	
 	if (a1 == a2 && b1 == b2 && c1 == c2) {
 		msg = "Boxes are equal.";
-		cout << msg << endl;
+		
 	}
 	return msg;
 }
