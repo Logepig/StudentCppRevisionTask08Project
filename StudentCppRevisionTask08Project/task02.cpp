@@ -33,7 +33,7 @@
  */
 
 string task02(int a, int b, int c, int d) {
-	string msg = "No arithmetic progression.";
+	string msg = " ";
 	if (a > b && b > c && c > d) {
 		msg = "Descending arithmetic progression.";
 	}

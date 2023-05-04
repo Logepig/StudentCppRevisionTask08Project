@@ -35,17 +35,20 @@
  *
  *	[ input 7]: 13 2023
  *	[output 7]: 0
- 
+ */
 
-//int task05(int month, int year) {
-//	if (month <= 0) {
-//		return 0;
-//	}
-//	if (month != 2) {
-//		return month % 2 == 1 ? 31 : 30;
-//	}
-//	if ( year == 0 || (year % 100 != 0 && year % 4 == 0) || year % 400 = 0) {
-//		return 29;
-//	}
-//	return 28;
-//}
+int task05(int month, int year) {
+	if (month < 1 || month > 12) {
+		return 0;
+	}
+	if (month != 2 && month < 8) {
+		return month % 2 == 1 ? 31 : 30;
+	}
+	if (month >= 8) {
+		return month % 2 == 0 ? 31 : 30;
+	}
+	if ((year % 100 != 0 && year % 4 == 0) || year % 400 == 0) {
+		return 29;
+	}
+	return 28;
+}
